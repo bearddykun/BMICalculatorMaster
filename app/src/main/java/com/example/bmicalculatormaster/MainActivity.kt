@@ -74,10 +74,10 @@ class MainActivity : AppCompatActivity() {
     //Get weight Definition from BMI
     private fun getWeightDefinition(bmi: Double): String {
         return when (bmi) {
-            in 0.0..18.5 -> "Underweight"
-            in 18.5..24.9 -> "Normal weight"
-            in 25.0..29.9 -> "Overweight"
-            else -> "Obesity"
+            in 0.0..18.5 -> getString(R.string.underweight)
+            in 18.5..24.9 -> getString(R.string.normal_weight)
+            in 25.0..29.9 -> getString(R.string.overweight)
+            else -> getString(R.string.obesity)
         }
     }
 }
