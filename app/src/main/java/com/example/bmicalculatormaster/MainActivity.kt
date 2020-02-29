@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateBMI(height: String, weight: String) {
-        if (!validateDataAndShowErrors(height, weight)) {
+        if (!validInputData(height, weight)) {
             return
         }
         val heightDouble = height.toDouble() / 100
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         displayBMIResult(bmi)
     }
 
-    private fun validateDataAndShowErrors(height: String, weight: String): Boolean {
+    private fun validInputData(height: String, weight: String): Boolean {
         if (height.isEmpty()) {
             showHideError(textInputLayoutHeight)
         } else if (weight.isEmpty()) {
