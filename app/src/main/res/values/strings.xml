@@ -6,7 +6,7 @@
     <string name="calculate">calculate</string>
     <string name="height_error">Please enter height value</string>
     <string name="weight_error">Please enter weight value</string>
-    <string name="format_string">%.2f</string>
+    <string name="format_string">Your BIM is: %.2f</string>
     <string name="underweight">Underweight</string>
     <string name="normal_weight">Normal weight</string>
     <string name="overweight">Overweight</string>

@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     private fun displayBMIResult(bmi: Double) {
         //formatting string to display bmi with only 2 digits after comma
         val bmiText =
-            "Your BIM is: ${getString(R.string.format_string).format(bmi)}\n${getWeightDefinition(
+            "${getString(R.string.format_string).format(bmi)}\n${getWeightDefinition(
                 bmi
             )}"
         //inside "apply" we don't need to call object itself anymore and can set his properties directly
