@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -68,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             textInputLayoutWeight -> textInputLayout.error = getString(R.string.weight_error)
         }
         //Hide error in 3 seconds
-        Handler().postDelayed({ textInputLayout.error = "" }, 3000)
+        Handler().postDelayed({ textInputLayout.error = "" }, TimeUnit.SECONDS.toMillis(3))
     }
 
     //Get weight Definition from BMI
