@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    //onStart is the
+    //onStart is called after the application is started and UI is becomes visible to user
     override fun onStart() {
         super.onStart()
         buttonCalculateBMI.setOnClickListener {
